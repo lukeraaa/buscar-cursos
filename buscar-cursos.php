@@ -1,4 +1,3 @@
-#!/usr/bin/env php
 <?php
 // o arquivo Autoload o Composer faz o trabalho necessário para definir um autoload
 // de classes de forma que seja possível utilizar as dependências sem incluir seus
