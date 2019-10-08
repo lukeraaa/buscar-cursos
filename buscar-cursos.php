@@ -18,5 +18,5 @@ $buscador = new Buscador($client, $crawler);
 $cursos = $buscador->buscar('/cursos-online-programacao/php'); // passando o complemento de URL para o caminho da requisição
 
 foreach ($cursos as $curso) {
-    echo $curso . PHP_EOL;
+    exibeMensagem($curso);
 }
