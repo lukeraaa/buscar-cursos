@@ -39,5 +39,7 @@
     },
     "scripts-descriptions": {
         "check": "Roda os scripts de PHAN, PHPCS e PHPunit respectivamente."
-    }
+    },
+    "license": "GPL-3.0",
+    "bin": ["buscar-cursos.php"]
 }
