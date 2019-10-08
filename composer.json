@@ -1,0 +1,40 @@
+{
+    "name": "mateus-sousa/buscador-cursos-alura",
+    "description": "Projeto que busca Cursos no Site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mateus Sousa",
+            "email": "mateus.sousa157@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/dom-crawler": "^4.2",
+        "symfony/css-selector": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\" : "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "squizlabs/php_codesniffer": "^3.5",
+        "phan/phan": "^2.2"
+    },
+    "scripts": {
+        "test" : "phpunit tests/TestBuscadorDeCursos.php",
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@phan",
+            "@cs",
+            "@test"
+        ],
+        "post-update-cmd": "@test"
+    },
+    "scripts-descriptions": {
+        "check": "Roda os scripts de PHAN, PHPCS e PHPunit respectivamente."
+    }
+}
